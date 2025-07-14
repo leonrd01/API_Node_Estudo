@@ -76,7 +76,7 @@ app.listen(3000) // rodando o servidor na porta 3000
 
 /*
 
-    1° passo: npm init -y  <-  inicializa o projeto com o package.json 
+    1° passo: npm init -y  <-  inicializa o projeto com o package.jsonn
     2° passo: npm i express  <- instala o express 
     3° passo: no aquivo ‘package.json’ adicionar “"type": "module"  <-  para usar o import
     4° passo: npm install prisma –save-dev  <- instala o prisma como dev dependency
