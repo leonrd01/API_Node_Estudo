@@ -12,14 +12,8 @@ app.post('/usuarios', async (req, res) => {
     await prisma.user.create({
         data: {
             nome: req.body.nome, 
-            turma: req.body.turma,  
-            nota_trabalho: req.body.nota_trabalho, 
-            nota_projeto: req.body.nota_projeto, 
-            nota_avaliacao1: req.body.nota_avaliacao1, 
-            nota_avaliacao2: req.body.nota_avaliacao2,
-            qualitativo: req.body.qualitativo, 
-            media: req.body.media, 
-            total: req.body.total 
+            idade: req.body.idade,
+            email: req.body.email,
         }
     })
 
@@ -35,14 +29,8 @@ app.put('/usuarios/:id', async (req, res) => {
         },
         data: {
             nome: req.body.nome, 
-            turma: req.body.turma,  
-            nota_trabalho: req.body.nota_trabalho, 
-            nota_projeto: req.body.nota_projeto, 
-            nota_avaliacao1: req.body.nota_avaliacao1, 
-            nota_avaliacao2: req.body.nota_avaliacao2,
-            qualitativo: req.body.qualitativo, 
-            media: req.body.media, 
-            total: req.body.total 
+            idade: req.body.idade,
+            email: req.body.email,
         }
     })
 
