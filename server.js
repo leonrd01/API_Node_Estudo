@@ -16,6 +16,7 @@ app.post('/usuarios', async (req, res) => {
             idade: req.body.idade,
             email: req.body.email,
         }
+        
     })
 
     res.status(201).json(req.body) // retornando o usuario criado com o status 201 (created)
